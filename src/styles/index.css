@@ -1,12 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181818; 
+    color: #e1e1e1; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .media-player {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #282828; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  .song-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid #404040;
+  }
+  
+  .song-list li:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .song-list li.active {
+    background-color: #1db954; 
+    color: #fff; 
+  }
+  
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+  .controls {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #3a3a3a; 
+    color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #4c4c4c; 
+    transform: scale(1.1);
+  }
+  
+  .controls button i {
+    font-size: 18px;
+    vertical-align: middle; 
+  }
+  
+  audio {
+    display: none;
+  }
+  
